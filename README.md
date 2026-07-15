@@ -55,6 +55,23 @@ I'm a full-stack developer who enjoys building efficient, well-structured softwa
 
 ---
 <!--LEETCODE_STATS_START-->
+## 📊 LeetCode Progress
+
+![LeetCode Stats](./assets/leetcode-stats.svg)
+
+**Total Solved:** 2 &nbsp;|&nbsp; **Global Ranking:** #5,000,001
+
+| Difficulty | Solved |
+|---|---|
+| 🟢 Easy | 1 |
+| 🟡 Medium | 1 |
+| 🔴 Hard | 0 |
+
+**Recently Solved**
+- [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
+- [Two Sum](https://leetcode.com/problems/two-sum/)
+
+_Last updated: 2026-07-15 · via [LeetCode public API](https://leetcode.com/Rito998/)_
 <!--LEETCODE_STATS_END-->
 
 ### 🏆 Trophies

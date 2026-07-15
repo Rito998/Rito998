@@ -54,6 +54,8 @@ I'm a full-stack developer who enjoys building efficient, well-structured softwa
 </p>
 
 ---
+<!--LEETCODE_STATS_START-->
+<!--LEETCODE_STATS_END-->
 
 ### 🏆 Trophies
 

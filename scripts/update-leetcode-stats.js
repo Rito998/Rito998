@@ -77,11 +77,18 @@ async function fetchLeetCodeData(username) {
 
 function extractCounts(acSubmissionNum) {
   const find = (d) => acSubmissionNum.find((s) => s.difficulty === d)?.count || 0;
+  const easy = find("Easy");
+  const medium = find("Medium");
+  const hard = find("Hard");
   return {
-    easy: find("Easy"),
-    medium: find("Medium"),
-    hard: find("Hard"),
-    total: find("All"),
+    easy,
+    medium,
+    hard,
+    // LeetCode's own "All" field can lag a few minutes behind the per-difficulty
+    // counts right after a new solve, so we derive the total ourselves instead
+    // of trusting it directly — this keeps the header total and the table rows
+    // always consistent with each other.
+    total: easy + medium + hard,
   };
 }
 

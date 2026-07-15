@@ -59,15 +59,16 @@ I'm a full-stack developer who enjoys building efficient, well-structured softwa
 
 ![LeetCode Stats](./assets/leetcode-stats.svg)
 
-**Total Solved:** 2 &nbsp;|&nbsp; **Global Ranking:** #5,000,001
+**Total Solved:** 3 &nbsp;|&nbsp; **Global Ranking:** #5,000,001
 
 | Difficulty | Solved |
 |---|---|
-| 🟢 Easy | 1 |
+| 🟢 Easy | 2 |
 | 🟡 Medium | 1 |
 | 🔴 Hard | 0 |
 
 **Recently Solved**
+- [GCD of Odd and Even Sums](https://leetcode.com/problems/gcd-of-odd-and-even-sums/)
 - [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
 - [Two Sum](https://leetcode.com/problems/two-sum/)
 

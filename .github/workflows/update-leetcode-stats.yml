@@ -1,1 +1,39 @@
+name: Update LeetCode Stats
 
+on:
+  schedule:
+    # Runs daily at 04:00 UTC — adjust as you like
+    - cron: "0 4 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch LeetCode stats & update README
+        env:
+          LEETCODE_USERNAME: Rito998
+        run: node scripts/update-leetcode-stats.js
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md assets/leetcode-stats.svg
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update LeetCode stats [skip ci]"
+            git push
+          fi
